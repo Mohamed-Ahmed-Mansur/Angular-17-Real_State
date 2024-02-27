@@ -1,0 +1,74 @@
+.landing-wrapper{
+    color: var(--black);
+    position: relative;
+    padding: bottom 2rem; 
+    background-image: url("../../../assets/images/back.png");     
+    background-size: cover;
+    background-size: 100% 98%;
+}
+
+.landing-container{
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/*left side*/
+.landing-description{
+    margin-top: 10px ;
+    margin-bottom: 30px ;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.container-custom {
+    margin: 20px;
+    margin-top: 100px;
+    background-color: #fff; /* Set the background color of the form container */
+    border-radius: 20px; /* Set rounded border */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Add a shadow */
+    padding: 20px; /* Add some padding for spacing */
+    height:500px;
+    /* width: 300px; */
+    width: 450px;
+    margin-left: 60px;
+}
+  
+/* Custom styling for form elements */
+.form-element {
+    background-color: #f8f9fa; /* Background color of input and select elements */
+    padding: 13px; /* Padding around input and select elements */
+    border: 1px solid #ced4da; /* Border color of input and select elements */
+    margin-top:40px ;
+    margin-bottom: 40px;
+    border-radius: 10px; 
+    color: darkgray
+}        
+    
+/* Custom styling for select options */
+.custom-select {
+    background-color: #f8f9fa; /* Background color of the dropdown */
+    padding: 13px; /* Padding around each option */
+    border: 1px solid #ced4da; /* Border color of the dropdown */
+    margin-top:3px ;  
+    border-radius: 10px;
+    margin-bottom: 40px;
+    color: rgb(116, 114, 114);
+}
+   
+.button{
+    font-weight: 500;
+    padding: 0.6rem 1.4rem;
+    color: white;
+    background: #3A0CA3;
+    border: none;
+    border-radius: 4px;
+    transition: all 300ms ease-in;
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #3A0CA3;
+    color: white;
+    box-shadow: 1px 1px 8px rgba(98, 74, 163, 0.2); /* Corrected box-shadow property */
+}

@@ -1,0 +1,100 @@
+p {
+  margin-bottom: 0;
+  color: #2b2b2b;
+  font-family: "Poppins", sans-serif;
+  line-height: 2rem;
+}
+
+.left-col {
+  max-width: 400px;
+}
+
+.title-h2 {
+  font-family: "Poppins", sans-serif;
+  color: #2b2b2b;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.title-h3 {
+  color: #4361ee;
+  letter-spacing: 0.15rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+
+#slider-wrapper {
+  position: relative;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  z-index: 999;
+}
+
+.blue-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -30%);
+  z-index: -1;
+}
+
+.img-wrap img {
+  width: 3.2rem;
+}
+
+/* .cardBox {
+  position: relative;
+  z-index: 999;
+} */
+
+.cardBox svg {
+  opacity: 0.8;
+}
+
+.card-footer .bi-star-fill {
+  color: #f8c819;
+}
+
+.card-footer i {
+  margin-left: 3px;
+}
+
+::ng-deep #slider-wrapper ul.p-carousel-indicators.p-reset {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: rotate(90deg) translate(-10%, -290%);
+  /* transform: rotate(90deg) !important; */
+  /* transform: translate(50%, 50%); */
+}
+
+::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator button {
+  width: 3.2rem;
+  height: 0.3rem;
+}
+
+::ng-deep
+  .p-carousel
+  .p-carousel-indicators
+  .p-carousel-indicator.p-highlight
+  button {
+  background-color: #808080;
+}
+
+::ng-deep .p-carousel .p-carousel-content .p-carousel-prev,
+::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+  border: 1px solid #4361ee;
+  color: #4361ee;
+  position: absolute;
+  border-radius: 100vw;
+  padding: 5px;
+  top: 105%;
+}
+
+::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
+  left: 40%;
+}
+
+::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+  left: 60%;
+}

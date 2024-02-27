@@ -1,0 +1,313 @@
+/* general footer style */
+.main-footer {
+    display: grid;
+    padding: 4% 15% 0 1%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 5fr 5fr 1fr;
+    background-color: ghostwhite;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+section {
+    /* border: 1px solid red; */
+    padding: 0.2rem;
+}
+
+.location-footer, .links-footer {
+    grid-row: 1 / span 2;
+}
+
+.rights-footer {
+    grid-column: 1 / span 3;
+}
+
+/* location section style */
+.location-footer-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.location-footer-logo span {
+    background-color: #3A0CA3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%; 
+}
+
+.location-footer-logo p {
+    font-size: 1.5rem;
+}
+
+.location-footer-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.location-footer-info div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.location-footer-info fa-icon {
+    color: #3A0CA3;
+}
+
+/* links section style */
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.column {
+    width: 45%; 
+}
+
+.links {
+    padding: 10px;
+}
+
+.links p {
+    margin: 10px 0;
+}
+
+.links p a {
+    text-decoration: none;
+    color: black;
+}
+
+/*subscribe section style */
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.1rem;
+    position: relative;
+}
+
+.input-field {
+    width: 42%;
+    padding: 1rem;
+    border: 1px solid #ccc; 
+    border-radius: 20px; 
+    outline: none; 
+    position: relative; /* Add relative positioning */
+    transition: width 1s, box-shadow 1s; /* Add transition for width and box-shadow properties */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Optional: Add hover and focus styles */
+.input-field:hover {
+    border-color: #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust the positioning of the icon */
+.subscribe-container span {
+    position: absolute;
+    top: 76%;
+    left: 30%;
+    transform: translateY(-50%);
+    background-color: #3A0CA3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;
+    cursor: pointer; 
+    border: 1px solid #3A0CA3;
+    transition: left 1s;
+}
+
+.subscribe-container span fa-icon {
+    color: #ffc;
+}
+
+.subscribe-container:hover .input-field {
+    width: 90%;
+}
+
+.subscribe-container:hover span {
+    left: 74.6%;
+}
+
+/* Social section style */
+.social-icons {
+    /* display: flex; */
+    /* margin-top: 20px;  */
+    padding: 1.1rem;
+}
+
+.title {
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+.icons {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icons svg {
+    color: #3A0CA3;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+/* Rights section style */
+.rights-footer {
+    background-color: #3A0CA3; 
+    padding: 20px; 
+    color: #ffc;
+}
+  
+.rights-footer div {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+  
+.rights-footer p {
+    margin: 0; 
+    font-size: 14px; 
+}
+  
+.rights-footer p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+  
+.rights-footer div > div > p:not(:last-child) {
+    margin-right: 20px; 
+}
+
+/* Media Query */
+@media screen and (max-width: 1300px) {
+    .main-footer {
+        grid-template-columns: 1fr;
+        padding: 4% 5% 0 5%;
+        height: 60rem;
+    }
+
+    .location-footer {
+        grid-row: auto;
+    }
+
+    .rights-footer {
+        grid-column: auto;
+        text-align: center;
+    }
+
+    .links-container {
+        align-items: center;
+    }
+
+    .links-footer {
+        height: fit-content;
+    }
+
+    .input-field {
+        width: 15%;
+    }
+
+    .subscribe-container span {
+        left: 15%;
+    }
+
+    .subscribe-container:hover .input-field {
+        width: 30%;
+    }
+    
+    .subscribe-container:hover span {
+        left: 29.5%;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .social-icons {
+        padding: 1.1rem;
+        text-align: center;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .icons svg {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .main-footer {
+        height: 70rem;
+    }
+
+    .input-field {
+        width: 20%;
+    }
+
+    .subscribe-container span {
+        left: 20%;
+    }
+
+    .subscribe-container:hover .input-field {
+        width: 60%;
+    }
+    
+    .subscribe-container:hover span {
+        left: 57%;
+    }
+
+    .links-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 355px) {
+
+    .main-footer {
+        height: 75rem;
+    }
+
+    .input-field {
+        width: 20%;
+    }
+
+    .subscribe-container span {
+        top: 72%;
+        left: 20%;
+    }
+
+    .subscribe-container:hover .input-field {
+        width: 60%;
+    }
+    
+    .subscribe-container:hover span {
+        left: 53%;
+    }
+
+    .links-container {
+        flex-direction: column;
+    }
+}
