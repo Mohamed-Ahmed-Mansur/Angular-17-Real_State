@@ -1,0 +1,15 @@
+<div class="container">
+  <div>
+    <h1>Your Listing</h1>
+  </div>
+
+  <div class="row g-4">
+    @if(products) { @for(prd of products; track prd.id) {
+    <div class="col-lg-4 col-md-6">
+      <app-card (deleteElm)="getData()" [products]="prd"></app-card>
+    </div>
+    } } @else {
+    <h2>Loading...</h2>
+    }
+  </div>
+</div>

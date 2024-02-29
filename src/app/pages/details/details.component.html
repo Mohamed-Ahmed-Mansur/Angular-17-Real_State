@@ -1,0 +1,63 @@
+<section class="apartment-details" style="margin-top: 5rem;">
+    <div class="container" id="myDiv">
+        <h1 class="mb-4" style="color: #3A0CA3;">Apartment Details</h1>
+        <div class="container mb-4">
+            <div class="row">
+                <div class="col-12 col-lg-8" style="height: 30rem;">
+                    <img src="{{ Data.image }}" alt="Apartment" class="img-fluid rounded mb-4 d-inline" style="height: 100%; width: 100%; object-fit: cover;"/>
+                </div>
+                <div class="col-lg-4 col-8 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: #3A0CA3;">Apartment Details</h5>
+                          <ul class="list-group list-group-flush mt-5" style="font-size: 1.3rem;">
+                            <li class="list-group-item"><h3>Title:</h3> {{ Data.title }}</li>
+                            <li class="list-group-item"><h3>Price:</h3> {{ Data.price }}</li>
+                            <li class="list-group-item"><h3>Location:</h3> {{ Data.location }}</li>
+                          </ul>
+                        </div>
+                        <div class="container mb-5">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="rounded p-3" style="background: whitesmoke;">
+                                  <!-- Content for the first child div -->
+                                  <fa-icon [icon]="faMoneyBill" style="color: #3A0CA3;"></fa-icon>
+                                  <br>
+                                  Bayment methods <span>Cash</span> or <span>Installments</span>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="rounded p-3" style="background: whitesmoke;">
+                                  <!-- Content for the second child div -->
+                                  <fa-icon [icon]="faCoins" style="color: #3A0CA3;"></fa-icon>
+                                  <br>
+                                  Down Payment <span>{{ Data.price }}</span>
+                                </div>
+                              </div>
+                            </div>
+                        </div>  
+                    </div>                      
+                </div>
+            </div>
+        </div>
+        <div class="card shadow">
+            <div class="card-body">
+              <div class="container">
+                <div class="row mb-2">
+                  <div class="col-md-4"><h4>Bedrooms:</h4> {{ Data.bedrooms }}</div>
+                  <div class="col-md-4"><h4>Bathrooms:</h4> {{ Data.bathrooms }}</div>
+                  <div class="col-md-4"><h4>sqft:</h4> {{ Data.sqft }}</div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-md-4"><h4>State:</h4> {{ Data.state }}</div>
+                  <div class="col-md-4"><h4>Category:</h4> {{ Data.category }}</div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+                <h5>Description:</h5>
+                <p>{{ Data.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>

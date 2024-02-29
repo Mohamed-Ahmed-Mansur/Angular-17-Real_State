@@ -1,0 +1,8 @@
+span {
+    font-weight: 500;
+    color: #3A0CA3;
+}
+.btn:hover {
+    background: #3A0CA3;
+    color: white;
+}

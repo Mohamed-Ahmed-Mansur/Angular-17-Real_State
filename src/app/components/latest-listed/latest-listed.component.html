@@ -1,0 +1,55 @@
+<div class="container-fluid p-4" id="latestListed">
+  <div class="row">
+    <h5 class="text-primary mt-4 col-12">CHECKOUT OUR NEW</h5>
+    <h2 class="mb-5 col-12">Latest Listed Properties</h2>
+    <br />
+
+    <div class="col-12 col-md-10 col-lg-12 m-auto mx-2">
+      <p-carousel
+        [value]="myArray"
+        [numVisible]="4"
+        [numScroll]="1"
+        [style]="{ height: '100%' }"
+      >
+        <ng-template let-product pTemplate="item">
+          <div class="Card">
+            <p class="text-primary m-2 category-Listing">
+              @if (product.category == "New Listing") {
+              <i class="fa-solid fa-house"></i> New Listing }
+            </p>
+            @if (product.category=="Popular") {
+            <p class="category-Popular m-2">
+              <i class="bi bi-fire"></i> Popular
+            </p>
+            } @if (product.category=="Discounted Price") {
+            <p class="category-Discounted m-2">
+              <i class="fa-solid fa-dollar-sign"></i> Discounted Price
+            </p>
+            }
+            <img
+              class="col-12 col-sm-6 col-lg-4"
+              src="{{ product.image }}"
+              alt="Img"
+            />
+
+            <div class="content">
+              <h4 class="price mt-3">{{ product.price }}</h4>
+              <h5 class="title">{{ product.title }}</h5>
+              <p class="location opacity-75">{{ product.location }}</p>
+              <p class="d-flex justify-content-start gap-4 align-items-center">
+                <span
+                  ><i class="fa-solid fa-bed mx-2"></i
+                  >{{ product.bedrooms }}</span
+                >
+                <span
+                  ><i class="fa-solid fa-bath"></i>
+                  {{ product.bathrooms }}</span
+                >
+              </p>
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </div>
+</div>

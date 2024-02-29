@@ -5,11 +5,13 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { LandingComponent } from '../../components/landing/landing.component';
 import { AreasComponent } from '../../components/areas/areas.component';
 import { TestimonialsComponent } from '../../components/testimonials/testimonials.component';
+import { LatestListedComponent } from '../../components/latest-listed/latest-listed.component';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FooterComponent, AboutComponent, NavbarComponent, LandingComponent, AreasComponent, TestimonialsComponent],
+  imports: [FooterComponent, AboutComponent, NavbarComponent, LandingComponent, AreasComponent, TestimonialsComponent, LatestListedComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

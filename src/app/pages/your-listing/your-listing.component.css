@@ -1,0 +1,68 @@
+/* @import "bootstrap-icons/font/bootstrap-icons.css"; */
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: #2b2b2b;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-block: 1rem 1.8rem;
+}
+
+.Card {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+img {
+  width: 350px;
+  height: 250px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.category-Listing {
+  position: absolute;
+  width: 150px;
+  left: 20px;
+  top: 200px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  background-color: #d7eeff;
+}
+.category-Popular {
+  position: absolute;
+  width: 150px;
+  left: 20px;
+  top: 200px;
+  color: red;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  background-color: pink;
+}
+.category-Discounted {
+  position: absolute;
+  width: 170px;
+  left: 20px;
+  top: 200px;
+  color: #00ce3a;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  background-color: #f1fff1;
+}

@@ -1,0 +1,195 @@
+<div class="container p-2" id="addListing">
+  <div class="row">
+    <h1>Add New Listing</h1>
+  </div>
+  <div class="row p-4 border shadow-sm rounded-3">
+    <form [formGroup]="myRegValid" (ngSubmit)="onSubmit()" >
+      <div class="mb-3">
+        <label for="title" class="form-label">Title:</label>
+        <input
+          formControlName="title"
+          type="text"
+          class="form-control"
+          id="title"
+          name="title"
+          placeholder="Your property title.."
+        />
+        <div
+          *ngIf="
+            myRegValid.get('title')?.invalid && myRegValid.get('title')?.touched
+          "
+          class="invalid-feedback d-block"
+        >
+          <div *ngIf="myRegValid.get('title')?.errors?.['required']">
+            Title is required.
+          </div>
+          <div *ngIf="myRegValid.get('title')?.errors?.['minlength']">
+            Title must be at least 3 characters long.
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="description" class="form-label">Description:</label>
+        <input
+          formControlName="description"
+          type="text"
+          class="form-control"
+          id="description"
+          name="description"
+          placeholder="Your description.."
+        />
+        <div
+          *ngIf="
+            myRegValid.get('description')?.invalid &&
+            myRegValid.get('description')?.touched
+          "
+          class="invalid-feedback d-block"
+        >
+          <div *ngIf="myRegValid.get('description')?.errors?.['required']">
+            Description is required.
+          </div>
+          <div *ngIf="myRegValid.get('description')?.errors?.['minlength']">
+            Description must be at least 20 characters long.
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="price" class="form-label">Price:</label>
+        <input
+          formControlName="price"
+          type="text"
+          class="form-control"
+          id="price"
+          name="price"
+          placeholder="Your price.."
+        />
+        <div
+          *ngIf="
+            myRegValid.get('price')?.invalid && myRegValid.get('price')?.touched
+          "
+          class="invalid-feedback d-block"
+        >
+          <div *ngIf="myRegValid.get('price')?.errors?.['required']">
+            Price is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="bedrooms" class="form-label">Bedrooms:</label>
+        <input
+          formControlName="bedrooms"
+          type="number"
+          class="form-control"
+          name="bedrooms"
+          id="bedrooms"
+        />
+        <div
+          *ngIf="
+            myRegValid.get('bedrooms')?.invalid &&
+            myRegValid.get('bedrooms')?.touched
+          "
+          class="invalid-feedback d-block"
+        >
+          <div *ngIf="myRegValid.get('bedrooms')?.errors?.['min']">
+            Number of bedrooms must be at least 1.
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="bathrooms" class="form-label">Bathrooms:</label>
+        <input
+          formControlName="bathrooms"
+          type="number"
+          class="form-control"
+          name="bathrooms"
+          id="bathrooms"
+        />
+        <div
+          *ngIf="
+            myRegValid.get('bathrooms')?.invalid &&
+            myRegValid.get('bathrooms')?.touched
+          "
+          class="invalid-feedback d-block"
+        >
+          <div *ngIf="myRegValid.get('bathrooms')?.errors?.['min']">
+            Number of bathrooms must be at least 1.
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="location" class="form-label">Location:</label>
+        <input
+          formControlName="location"
+          type="text"
+          class="form-control"
+          name="location"
+          id="location"
+        />
+        <div
+          *ngIf="
+            myRegValid.get('location')?.invalid &&
+            myRegValid.get('location')?.touched
+          "
+          class="invalid-feedback d-block"
+        >
+          <div *ngIf="myRegValid.get('location')?.errors?.['required']">
+            Location is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="state" class="form-label">State:</label>
+        <select
+          formControlName="state"
+          class="form-select"
+          name="state"
+          id="state"
+        >
+          <option value="ny">New York</option>
+          <option value="fl">Florida</option>
+          <option value="ca">California</option>
+          <option value="co">Colorado</option>
+          <option value="tx">Texas</option>
+        </select>
+        <div
+          *ngIf="
+            myRegValid.get('state')?.invalid && myRegValid.get('state')?.touched
+          "
+          class="invalid-feedback d-block"
+        >
+          <div *ngIf="myRegValid.get('state')?.errors?.['required']">
+            State is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <!-- <img [src]="url" alt="image" class="img-fluid" /> -->
+        <input
+          formControlName="image"
+          type="file"
+          class="form-control"
+          name="file"
+          id="file"
+          (change)="onselectFile($event)"
+        />
+      </div>
+
+      <div class="mb-3">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="myRegValid.invalid"
+        >
+          Add
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

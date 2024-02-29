@@ -1,3 +1,8 @@
+#testimonals {
+  margin-block: 8em;
+  text-align: left;
+}
+
 p {
   margin-bottom: 0;
   color: #2b2b2b;
@@ -59,21 +64,28 @@ p {
   margin-left: 3px;
 }
 
-::ng-deep #slider-wrapper ul.p-carousel-indicators.p-reset {
+::ng-deep #testimonals #slider-wrapper ul.p-carousel-indicators.p-reset {
   position: absolute;
   top: 50%;
   right: 0;
-  transform: rotate(90deg) translate(-10%, -290%);
+  transform: rotate(90deg) translate(-10%, -320%);
   /* transform: rotate(90deg) !important; */
   /* transform: translate(50%, 50%); */
+}
+
+::ng-deep #testimonals .p-carousel .p-carousel-indicators .p-carousel-indicator button {
+  width: 3.2rem;
+  height: 0.3rem;
+  margin: 0.2rem;
 }
 
 ::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator button {
   width: 3.2rem;
   height: 0.3rem;
+  margin: 1.2rem 0.2rem;
 }
 
-::ng-deep
+::ng-deep 
   .p-carousel
   .p-carousel-indicators
   .p-carousel-indicator.p-highlight
@@ -81,8 +93,8 @@ p {
   background-color: #808080;
 }
 
-::ng-deep .p-carousel .p-carousel-content .p-carousel-prev,
-::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+::ng-deep #testimonals .p-carousel .p-carousel-content .p-carousel-prev,
+::ng-deep #testimonals .p-carousel .p-carousel-content .p-carousel-next {
   border: 1px solid #4361ee;
   color: #4361ee;
   position: absolute;
@@ -91,10 +103,10 @@ p {
   top: 105%;
 }
 
-::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
+::ng-deep #testimonals .p-carousel .p-carousel-content .p-carousel-prev {
   left: 40%;
 }
 
-::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+::ng-deep #testimonals .p-carousel .p-carousel-content .p-carousel-next {
   left: 60%;
 }
