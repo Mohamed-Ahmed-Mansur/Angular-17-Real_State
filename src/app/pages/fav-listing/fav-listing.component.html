@@ -1,0 +1,62 @@
+<div class="container" style="min-height: 50rem;">
+  <div>
+    <h1>Your Favourites</h1>
+  </div>
+
+  <div class="row g-4 cont">
+    @if(products ) { @for(product of products; track product.id) { @if
+    (product.Favourite) {
+    <div class="Card position-relative">
+      <!-- Heart icon for adding to favorites -->
+
+      <span class="heart-icon" (click)="addToFavorites(product)">
+        @if (product.Favourite) {
+        <i class="fa-solid fa-heart heart"></i>
+        }@else {
+        <i class="fa-solid fa-heart not-heart"></i>
+
+        }
+      </span>
+      <ng-container *ngIf="product.category === 'New Listing'">
+        <p class="text-primary m-2 category-Listing">
+          <span><i class="fa-solid fa-house"></i></span>
+          <span> New Listing </span>
+        </p>
+      </ng-container>
+      <ng-container *ngIf="product.category === 'Popular'">
+        <p class="category-Popular m-2 d-flex justify-content-center gap-2">
+          <span><i class="fa-solid fa-fire-flame-curved"></i></span
+          ><span>Popular</span>
+        </p>
+      </ng-container>
+      <ng-container *ngIf="product.category === 'Discounted Price'">
+        <p class="category-Discounted m-2">
+          <i class="fa-solid fa-dollar-sign"></i> Discounted Price
+        </p>
+      </ng-container>
+
+      <!-- Image -->
+      <img
+        class="col-12 col-sm-6 col-lg-4"
+        src="{{ product.image }}"
+        alt="Img"
+      />
+
+      <!-- Content -->
+      <div class="content">
+        <h4 class="price mt-3">{{ product.price }}</h4>
+        <h5 class="title">{{ product.title }}</h5>
+        <p class="location opacity-75">{{ product.location }}</p>
+        <p class="d-flex justify-content-start gap-4 align-items-center">
+          <span
+            ><i class="fa-solid fa-bed mx-2"></i>{{ product.bedrooms }}</span
+          >
+          <span><i class="fa-solid fa-bath"></i>{{ product.bathrooms }}</span>
+        </p>
+      </div>
+    </div>
+    } } } @else {
+    <h2>you Favourits is empty</h2>
+    }
+  </div>
+</div>

@@ -21,22 +21,31 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="listing">Listings</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#">About</a>
-          </li>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" routerLink="bookings">My Bookings</a>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" routerLink="/ContactUs">Contact us</a>
           </li>
         </ul>
         <div class="ms-auto">
+          <a routerLink="/favListing">
+            <button class="nav-item btn mx-2 myAds">
+              <i class="fa-solid fa-house-circle-check"></i>
+              My Favourites
+            </button>
+          </a>
           <a routerLink="/yourListing">
             <button class="nav-item btn mx-2 myAds">
               <i class="fa-solid fa-house-circle-check"></i>
               My Ads
             </button>
           </a>
-  
-          <button class="nav-item btn1">
+
+          <button routerLink="login" class="nav-item btn1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

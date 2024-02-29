@@ -18,8 +18,11 @@
               <i class="fa-solid fa-house"></i> New Listing }
             </p>
             @if (product.category=="Popular") {
-            <p class="category-Popular m-2">
-              <i class="bi bi-fire"></i> Popular
+              <p
+              class="category-Popular m-2 d-flex justify-content-center gap-2"
+            >
+              <span><i class="fa-solid fa-fire-flame-curved"></i></span
+              ><span>Popular</span>
             </p>
             } @if (product.category=="Discounted Price") {
             <p class="category-Discounted m-2">

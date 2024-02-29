@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 
 @Component({
   selector: 'app-latest-listed',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [CarouselModule, CommonModule],
   templateUrl: './latest-listed.component.html',
   styleUrl: './latest-listed.component.css',
 })

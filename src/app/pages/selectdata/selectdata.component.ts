@@ -22,7 +22,6 @@ export class SelectdataComponent implements OnInit{
   faBath=faBath
   constructor(myActivated:ActivatedRoute,private areasService:AddListingService){
     this.State = myActivated.snapshot.params["state"];
-  
   }
   ngOnInit(): void {
     this.areasService.GellAllareasbyid( this.State).subscribe({
@@ -33,8 +32,8 @@ export class SelectdataComponent implements OnInit{
       },
       error:(err)=>{console.log(err)}
     })
-}
   }
+}
 
 
 

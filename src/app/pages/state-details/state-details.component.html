@@ -1,0 +1,32 @@
+<div class="sontain">
+  <div class="  mt-4 container ">
+      <!-- <input type="text" class="form-control rounded-4  form-element" id="location" placeholder="Enter location"> -->
+  
+  
+    <div class=" container mt-5 ">
+      <div class="  d-flex  flex-wrap "> 
+  
+   @for(u of stateSearched ;track u.id){
+  <div class="Card h-100 border rounded-5 m-2 p-4">
+     
+      <img class="w-100" src="{{ u.image }}" alt="Img" />
+      <div class="content d-flex flex-column text-left">
+        <h4 style="text-align: left" class="mt-3">{{ u.price }}</h4>
+        <h5 style="text-align: left" class="title">{{ u.title }}</h5>
+        <p style="text-align: left" class="location opacity-75">
+          {{ u.location }}
+        </p>
+        <p class="d-flex justify-content-start gap-4 align-items-center m-1">
+          <!-- <span>{{ u.bedrooms }} <fa-icon [icon]="faBed"></fa-icon></span>
+         <span> {{ u.bedrooms }}<fa-icon [icon]="faBath"></fa-icon></span> -->
+  
+        </p>
+       
+      </div>
+    </div>
+  }
+  
+  </div>
+  </div>
+  </div>
+  </div>

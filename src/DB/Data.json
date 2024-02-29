@@ -11,7 +11,8 @@
       "location": "103 Wright Court Burien, NY 98168",
       "state": "NY",
       "image": "https://source.unsplash.com/featured/?apartment",
-      "category": "Popular"
+      "category": "Popular",
+      "Favourite": true
     },
     {
       "id": "2",
@@ -24,7 +25,8 @@
       "location": "45 Acacia Avenue Buffalo, NY 14202",
       "state": "NY",
       "image": "https://source.unsplash.com/featured/?house",
-      "category": "New Listing"
+      "category": "New Listing",
+      "Favourite": false
     },
     {
       "id": "3",
@@ -37,7 +39,8 @@
       "location": "230 Olive Street Rochester, NY 14614",
       "state": "NY",
       "image": "https://source.unsplash.com/featured/?loft",
-      "category": "Discounted Price"
+      "category": "Discounted Price",
+      "Favourite": false
     },
     {
       "id": "4",
@@ -50,7 +53,8 @@
       "location": "7804 Miller Road Albany, NY 12205",
       "state": "NY",
       "image": "https://source.unsplash.com/featured/?townhouse",
-      "category": "Popular"
+      "category": "Popular",
+      "Favourite": false
     },
     {
       "id": "5",
@@ -63,7 +67,8 @@
       "location": "32 Elm Street Syracuse, NY 13202",
       "state": "NY",
       "image": "https://source.unsplash.com/featured/?cottage",
-      "category": "Popular"
+      "category": "Popular",
+      "Favourite": false
     },
     {
       "id": "6",
@@ -76,7 +81,8 @@
       "location": "987 Palm Street Miami, FL 33131",
       "state": "FL",
       "image": "https://source.unsplash.com/featured/?condo",
-      "category": "Discounted Price"
+      "category": "Discounted Price",
+      "Favourite": false
     },
     {
       "id": "7",
@@ -326,7 +332,6 @@
       "category": "Popular"
     }
   ],
-  "search": [],
   "added": [
     {
       "id": "7b82",
@@ -387,23 +392,23 @@
       "id": "31ea",
       "title": "new",
       "description": "wefwefwefwefewfwefwef",
-      "price": "5555",
+      "price": "8888",
       "bedrooms": 4,
       "bathrooms": 4,
       "location": "NY",
       "state": "fl",
-      "image": "6.jpg"
+      "image": "7.jpg"
+    }
+  ],
+  "search": [
+    {
+      "id": "5"
     },
     {
-      "id": "88b8",
-      "title": "erferf",
-      "description": "wefwefwefwefewfwefwef",
-      "price": "6666",
-      "bedrooms": 6,
-      "bathrooms": 6,
-      "location": "NY",
-      "state": "ca",
-      "image": "8.jpg"
+      "0": "NY",
+      "1": "2",
+      "2": "Popular",
+      "id": "e80f"
     }
   ]
 }
