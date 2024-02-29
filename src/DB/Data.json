@@ -373,15 +373,37 @@
       "image": "3.jpg"
     },
     {
-      "id": "1851",
-      "title": "efew",
-      "description": "ewfewfewfewfewfewfewfw",
+      "id": "a47c",
+      "title": "feawf",
+      "description": "wefwefwefwefewfwefwef",
       "price": "4000",
       "bedrooms": 2,
       "bathrooms": 3,
-      "location": "sdef",
-      "state": "ny",
-      "image": "9.jpg"
+      "location": "NY",
+      "state": "ca",
+      "image": "3.jpg"
+    },
+    {
+      "id": "31ea",
+      "title": "new",
+      "description": "wefwefwefwefewfwefwef",
+      "price": "5555",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "location": "NY",
+      "state": "fl",
+      "image": "6.jpg"
+    },
+    {
+      "id": "88b8",
+      "title": "erferf",
+      "description": "wefwefwefwefewfwefwef",
+      "price": "6666",
+      "bedrooms": 6,
+      "bathrooms": 6,
+      "location": "NY",
+      "state": "ca",
+      "image": "8.jpg"
     }
   ]
 }

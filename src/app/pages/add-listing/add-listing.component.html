@@ -2,7 +2,7 @@
   <div class="row">
     <h1>Add New Listing</h1>
   </div>
-  <div class="row p-4 border shadow-sm rounded-3">
+  <div class="row shadow-lg p-3 mb-5 bg-body-tertiary rounded">
     <form [formGroup]="myRegValid" (ngSubmit)="onSubmit()" >
       <div class="mb-3">
         <label for="title" class="form-label">Title:</label>
@@ -85,6 +85,7 @@
           class="form-control"
           name="bedrooms"
           id="bedrooms"
+          placeholder="Your Bedrooms.."
         />
         <div
           *ngIf="
@@ -107,6 +108,7 @@
           class="form-control"
           name="bathrooms"
           id="bathrooms"
+          placeholder="Your Bathrooms.."
         />
         <div
           *ngIf="
@@ -129,6 +131,7 @@
           class="form-control"
           name="location"
           id="location"
+          placeholder="Your Location.."
         />
         <div
           *ngIf="

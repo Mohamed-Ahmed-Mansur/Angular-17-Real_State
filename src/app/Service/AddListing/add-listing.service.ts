@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class AddListingService {
   private myDB = 'http://localhost:3001/added';
+  private listingsDB = 'http://localhost:3001/listings';
 
   constructor(private http: HttpClient) {}
 
@@ -27,5 +28,12 @@ export class AddListingService {
 
   deleteListing(id: any) {
     return this.http.delete(`${this.myDB}/${id}`);
+  }
+
+  GellAllareas(){
+    return this.http.get(this.listingsDB)
+  }
+  GellAllareasbyid(state:any){
+    return this.http.get(this.listingsDB+'?state='+state)
   }
 }

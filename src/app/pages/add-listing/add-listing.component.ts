@@ -63,7 +63,7 @@ export class AddListingComponent implements OnInit {
     this.url = e.target.files[0];
   }
 
-  onSubmit() {
+  async onSubmit() {
     if (this.activateRoute.snapshot.params['id']) {
       const formData = new FormData();
       formData.append('file', this.url);
@@ -93,10 +93,13 @@ export class AddListingComponent implements OnInit {
 
       if (this.myRegValid.valid) {
         console.log(this.myRegValid.value);
-        this.listingService
+        await this.listingService
           .addListing({ ...this.myRegValid.value, image: this.url.name })
-          .subscribe();
-        this.route.navigateByUrl('yourListing');
+          .subscribe({
+            complete: () => {
+              this.route.navigateByUrl('yourListing');
+            }
+          })
       } else {
         console.log('Data is invalid');
       }
